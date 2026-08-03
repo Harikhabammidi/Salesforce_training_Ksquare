@@ -1,10 +1,7 @@
-trigger vehicleTrigger on Vehicle__c (before insert) {
-    Account acc = [
-            SELECT Id, Name
-            FROM Account
-            LIMIT 1
-        ];
-    for(Vehicle__c vehicle: Trigger.new){
-        System.debug(acc.Name);
+trigger VehicleTrigger on Vehicle__c (before insert) {
+
+    if (Trigger.isBefore && Trigger.isInsert) {
+        VehicleTriggerHandler.handleBeforeInsert(Trigger.new);
     }
+
 }
