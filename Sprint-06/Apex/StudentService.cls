@@ -17,7 +17,7 @@ public with sharing class StudentService {
     }
 }
 
-/* Execute Anonymous window /*
+/* Execute Anonymous window */
 Student__c student = [
     SELECT Id, Name, CGPA__c, Branch__c, Backlogs__c
     FROM Student__c
