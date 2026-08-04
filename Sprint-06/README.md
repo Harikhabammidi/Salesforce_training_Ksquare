@@ -24,92 +24,87 @@ This project simulates a **Placement Management System** where Salesforce automa
 ## 🛠️ Technologies Used
 
 * Salesforce Apex
-* Apex Triggers
-* Trigger Handler Pattern
-* SOQL
-* Collections (List, Set, Map)
+* SOQL (Salesforce Object Query Language)
+* DML (Data Manipulation Language)
 * Salesforce Custom Objects
 
 ---
 
 ## 📂 Custom Objects
 
-* Vehicle
 * Student
 * Job
 * Application
 
 ---
 
-## 📁 Apex Components
+## 📁 Apex Classes
 
-* VehicleTrigger.trigger
-* VehicleTriggerHandler.cls
-* ApplicationTrigger.trigger
-* ApplicationTriggerHandler.cls
+* StudentService.cls
+* JobService.cls
+* ApplicationService.cls
+* UpdateApplicationService.cls
+* PlacementService.cls
 
 ---
 
-## 🔄 Trigger Flow
+## 🔄 Business Flow
 
 ```text
-Business Event
+Receive Request
         ↓
-Trigger Fires
+Retrieve Student
         ↓
-Trigger Handler
+Retrieve Job
         ↓
-Retrieve Required Records
+Check Duplicate Application
         ↓
-Apply Business Logic
+Validate Eligibility
         ↓
-Save / Reject Record
+Create Application
+        ↓
+Save Record (DML)
+        ↓
+Display Confirmation
 ```
 
 ---
 
 ## 📚 Sprint Coverage
 
-### Sprint 6
+### Sprint 7
 
-* Understand Event-Driven Programming.
-* Learn Trigger Events.
-* Separate Trigger and Business Logic.
-* Design reusable Trigger Handlers.
+* Retrieve student information required for eligibility validation.
 
-### Bulkification
+### Sprint 8
 
-* Avoid SOQL inside loops.
-* Use Sets to collect unique record IDs.
-* Query records only once.
-* Store queried records in Maps for fast lookup.
+* Retrieve job eligibility criteria.
 
-### Duplicate Prevention
+### Sprint 9
 
-* Retrieve existing Application records.
-* Compare Student and Job combinations.
-* Prevent duplicate applications using `addError()`.
+* Prevent duplicate applications.
+
+### Sprint 10
+
+* Create and save a new application record.
+
+### Sprint 11
+
+* Update application status.
+
+### Sprint 12
+
+* Complete the full business transaction using SOQL, DML, and Apex.
 
 ---
 
 ## 🎯 Learning Outcomes
 
-* Understand how Salesforce responds automatically to business events.
-* Differentiate between **before** and **after** triggers.
-* Build reusable Trigger Handler classes.
-* Write bulkified trigger logic.
-* Use Collections (List, Set, Map) effectively.
-* Prevent duplicate records efficiently.
-
----
-
-## 💡 Engineering Principles
-
-* Triggers should only observe business events.
-* Business logic belongs in Handler or Service classes.
-* Retrieve data before making business decisions.
-* Never write SOQL or DML inside loops.
-* Design for scalability and maintainability.
+* Retrieve business data efficiently using SOQL.
+* Perform data manipulation using DML.
+* Apply business validation before database operations.
+* Build reusable Apex service classes.
+* Understand enterprise transaction flow in Salesforce.
 
 ---
 
@@ -117,21 +112,9 @@ Save / Reject Record
 
 Add screenshots here, such as:
 
-* Vehicle Trigger
-* Vehicle Trigger Handler
-* Application Trigger
-* Application Trigger Handler
-* Trigger Execution Logs
-* Bulk Insert Results
-* Governor Limit Error (Before Bulkification)
-* Successful Bulk Insert (After Bulkification)
-
----
-
-## 🏆 Key Takeaways
-
-* Learned Event-Driven Programming in Salesforce.
-* Implemented Trigger and Handler Pattern.
-* Prevented Duplicate Applications.
-* Applied Bulkification Best Practices.
-* Improved code readability, reusability, and scalability.
+* Student Record
+* Job Record
+* Application Record
+* Apex Classes
+* Execute Anonymous Results
+* Debug Logs
