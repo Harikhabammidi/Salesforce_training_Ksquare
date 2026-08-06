@@ -1,4 +1,4 @@
-Sprint 01 – Data Modeling, Apex & SOQL
+## Sprint 01 – Data Modeling, Apex & SOQL
 
 ## 📌 Overview
 This sprint was focused on building core Salesforce development skills through hands-on tasks. I built a custom data model for a Car Service Center use case, practiced Apex fundamentals, ran SOQL queries covering filtering and aggregation, worked on Apex Triggers, and created my first Lightning Web Component using `@wire`.
