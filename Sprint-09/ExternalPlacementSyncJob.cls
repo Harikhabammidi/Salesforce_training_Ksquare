@@ -8,7 +8,7 @@ public class ExternalPlacementSyncJob implements Queueable {
 
     public void execute(QueueableContext context) {
 
-        System.debug('External sync started: ' + offerId);
+        System.debug('External sync: ' + offerId);
 
         System.enqueueJob(
             new PlacementNotificationJob(offerId)
