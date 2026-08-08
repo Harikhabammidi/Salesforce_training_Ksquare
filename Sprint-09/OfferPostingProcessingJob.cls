@@ -7,6 +7,6 @@ public class OfferPostProcessingJob implements Queueable {
     }
 
     public void execute(QueueableContext context) {
-        System.debug('Offer processing started: ' + offerId);
+        System.debug('Offer processing: ' + offerId);
     }
 }
