@@ -1,16 +1,16 @@
-# 🚀 Placement Management System – Sprint 6
+#  Placement Management System – Sprint 5
 
 A Salesforce Apex project demonstrating how to automate business processes using **Apex Triggers**, **Trigger Handlers**, and **Event-Driven Programming**.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project simulates a **Placement Management System** where Salesforce automatically responds to business events. Instead of waiting for user actions, the application performs validations and business operations whenever records are inserted or updated.
 
 ---
 
-## ✨ Features
+##  Features
 
 * ⚡ Automatic execution using Apex Triggers
 * 🛡️ Prevent duplicate applications before saving
@@ -21,7 +21,7 @@ This project simulates a **Placement Management System** where Salesforce automa
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Salesforce Apex
 * SOQL (Salesforce Object Query Language)
@@ -30,7 +30,7 @@ This project simulates a **Placement Management System** where Salesforce automa
 
 ---
 
-## 📂 Custom Objects
+## Custom Objects
 
 * Student
 * Job
@@ -38,7 +38,7 @@ This project simulates a **Placement Management System** where Salesforce automa
 
 ---
 
-## 📁 Apex Classes
+##  Apex Classes
 
 * StudentService.cls
 * JobService.cls
@@ -48,7 +48,7 @@ This project simulates a **Placement Management System** where Salesforce automa
 
 ---
 
-## 🔄 Business Flow
+##  Business Flow
 
 ```text
 Receive Request
@@ -70,7 +70,7 @@ Display Confirmation
 
 ---
 
-## 📚 Sprint Coverage
+##  Sprint Coverage
 
 ### Sprint 7
 
@@ -98,7 +98,7 @@ Display Confirmation
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 * Retrieve business data efficiently using SOQL.
 * Perform data manipulation using DML.
@@ -108,7 +108,7 @@ Display Confirmation
 
 ---
 
-## 📸 Project Screenshots
+##  Project Screenshots
 
 Add screenshots here, such as:
 
