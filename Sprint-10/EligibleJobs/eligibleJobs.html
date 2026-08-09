@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Eligible Jobs">
+
+        <template for:each={jobs} for:item="job">
+
+            <div key={job.Id} class="slds-box slds-m-around_small">
+
+                <h2>{job.Name}</h2>
+
+                <p>Location: {job.Job_location__c}</p>
+                <p>Package: {job.Salary_Package__c} LPA</p>
+                <p>Deadline: {job.Closing_Date__c}</p>
+
+                <lightning-button
+                    label="Apply"
+                    variant="brand"
+                    data-job-id={job.Id}
+                    onclick={handleApply}>
+                </lightning-button>
+
+            </div>
+
+        </template>
+
+    </lightning-card>
+</template>
