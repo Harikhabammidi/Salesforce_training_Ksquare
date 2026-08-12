@@ -1,4 +1,4 @@
-# Sprint 7 – Bulk Processing and Governor Limits
+# Sprint 08 – Bulk Processing and Governor Limits
 
 ## Overview
 
