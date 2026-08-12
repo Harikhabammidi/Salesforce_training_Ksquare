@@ -49,6 +49,6 @@ This sprint focused on Salesforce declarative automation using **Validation Rule
 
 ---
 
-## 🎯 Outcome
+##  Outcome
 
 This sprint strengthened my understanding of Salesforce declarative automation by implementing business rules using Validation Rules and Record-Triggered Flows while learning when to use Flow and when Apex Triggers are more appropriate.
