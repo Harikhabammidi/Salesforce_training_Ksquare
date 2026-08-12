@@ -1,4 +1,4 @@
-#  Sprint 9 – Interactive Lightning Web Components(LWC)  
+#  Sprint 10 – Interactive Lightning Web Components(LWC)  
 
 ##  Overview
 
