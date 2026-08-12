@@ -1,4 +1,4 @@
-#  Placement Management System 
+# Sprint-06 Placement Management System 
 
 A Salesforce Apex project demonstrating how to automate business processes using **Apex Triggers**, **Trigger Handlers**, and **Event-Driven Programming**.
 
